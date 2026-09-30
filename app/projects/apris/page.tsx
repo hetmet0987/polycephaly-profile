@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import type { LucideIcon } from 'lucide-react'
 import {
   ArrowDown, ArrowLeft, ArrowUpRight, Droplets, Gauge, Layers3,
   Lightbulb, Moon, Mountain, Orbit, Sparkles, Sun, Waves, Wind, Zap
@@ -35,7 +36,7 @@ const water = [
   ['Optical Depth', 'Basic absorption/tint approximation for water body appearance.'],
 ]
 
-const pipeline = [
+const pipeline: Array<[string, string, LucideIcon]> = [
   ['Geometry', 'Water geometry + height field', Mountain],
   ['Surface', 'Normals + material response', Waves],
   ['Lighting', 'SSR + Fresnel + GI', Sun],
