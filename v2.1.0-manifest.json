@@ -1,0 +1,55 @@
+{
+  "version": "2.1.0",
+  "base": "polycephaly-profile-v2.0.0-prime-seneschal",
+  "added": {
+    "project": "Prime Exchequer",
+    "route": "/projects/prime-exchequer",
+    "stage": "E1 Foundation"
+  },
+  "project_order": [
+    "Prime Chancellor",
+    "Prime Nexus",
+    "Prime Regent",
+    "Prime Legate",
+    "Prime Marshal",
+    "Prime Justiciar",
+    "Prime Herald",
+    "Prime Interpreter",
+    "Prime Maestro",
+    "Prime Seneschal",
+    "Prime Exchequer",
+    "APRIS"
+  ],
+  "seneschal_source": {
+    "stage": "S10.10",
+    "title": "Channel-Aware Canonical Permission Memory",
+    "roles": 106,
+    "categories": 25,
+    "channels": 115,
+    "inherited_channels": 89,
+    "explicit_exceptions": 26,
+    "static_checks": "24/24",
+    "compiler_verified": false
+  },
+  "exchequer_source": {
+    "current_stage": "E1",
+    "current_title": "Exchequer Foundation",
+    "implemented_modules": 5,
+    "public_commands": 6,
+    "ui_languages": 8,
+    "currency": "KINGDOM_COIN",
+    "future_stages": "E2-E10",
+    "future_target_modules": 50,
+    "future_stage_labels": [
+      "Monetary System",
+      "Economic Engine",
+      "Commerce",
+      "Treasury Operations",
+      "Rewards & Incentives",
+      "Games & Entertainment",
+      "Financial Security",
+      "Economic Intelligence",
+      "Sovereign Treasury"
+    ]
+  }
+}

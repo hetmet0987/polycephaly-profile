@@ -1,0 +1,26 @@
+PASS 106_roles
+PASS 25_categories
+PASS 115_channels
+PASS 89_inherit_channels
+PASS 26_exact_exceptions
+PASS inherit_channels_have_no_overwrites
+PASS exact_channels_have_policy
+PASS group_headers_not_targeted
+PASS managed_bots_not_targeted
+PASS send_implies_view
+PASS everyone_is_managed
+PASS all_inherit_parents_exist
+PASS verification_exception
+PASS support_interactive_exceptions
+PASS prime_staff_private
+PASS chancellor_mixed_explicit
+PASS recruitment_explicit
+PASS embassy_interactive_explicit
+PASS court_publication_only_exceptions
+PASS court_hall_inherits_private
+PASS voice_channels_explicit
+PASS three_uncategorized_explicit
+PASS runtime_uses_s10_10
+PASS version_10_10
+
+24/24 PASS
