@@ -21,6 +21,7 @@ import {
   Truck,
   Users,
 } from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
 
 const systemBlocks = [
   ['M1–M5', 'Defense Command & Readiness', 'Defense command, force structure, personnel readiness, capability assessment and strategic readiness fusion.'],
@@ -41,7 +42,7 @@ const commandPlanes = [
   ['/system', 'Language, health and audit controls.'],
 ]
 
-const readiness = [
+const readiness: Array<[string, string, LucideIcon]> = [
   ['PERSONNEL', '25%', Users],
   ['CAPABILITY', '25%', Gauge],
   ['RESILIENCE', '20%', Shield],

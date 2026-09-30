@@ -7,8 +7,9 @@ import {
   ClipboardCheck, FileCheck2, Gavel, GitBranch, History, Landmark,
   Languages, LockKeyhole, Scale, ShieldCheck, Stamp, Swords, Users,
 } from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
 
-const controls = [
+const controls: Array<[string, string, LucideIcon]> = [
   ['/justiciar', 'Supreme Court executive overview.', Landmark],
   ['/cases', 'Case workspace, focus and lifecycle.', FileCheck2],
   ['/law', 'Canonical Codex + publication health.', BookOpenCheck],
@@ -43,7 +44,7 @@ const reworks = [
   ['JR5', 'Final Supreme Court Experience', 'Needs-first attention, Case Focus, Court Readiness and publication health.'],
 ]
 
-const judicialPipeline = [
+const judicialPipeline: Array<[string, string, LucideIcon]> = [
   ['CASE', 'Filed / accepted / investigated', FileCheck2],
   ['LAW', 'Codex rule and legal basis', BookOpenCheck],
   ['EVIDENCE', 'Integrity + chain of custody', ClipboardCheck],

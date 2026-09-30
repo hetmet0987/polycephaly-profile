@@ -7,6 +7,7 @@ import {
   FileText, Languages, LockKeyhole, MessageCircle, MessageSquareText,
   ShieldCheck, Sparkles, Target, WandSparkles, Workflow,
 } from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
 
 const stages = [
   ['STAGE 01', 'Universal Translator', 'The core /translate workflow with Auto Detect, Natural / Literal / Formal modes, private results and 45+ translation targets.'],
@@ -21,7 +22,7 @@ const stages = [
   ['STAGE 10', 'Personal Preferences', 'Inspect and change default target language, translation mode and tone behavior in one predictable preferences surface.'],
 ]
 
-const capabilities = [
+const capabilities: Array<[string, string, LucideIcon]> = [
   ['Translate', '45+ language targets', Languages],
   ['Understand', 'Context + nuance + confidence', Brain],
   ['Connect', 'Opt-in conversation turns', MessageCircle],
@@ -35,7 +36,7 @@ const commandFamilies = [
   ['/preferences', 'Personal translation defaults', ['show', 'set', 'reset']],
 ]
 
-const privacyRules = [
+const privacyRules: Array<[string, string, LucideIcon]> = [
   ['No channel-wide monitoring', 'Prime Interpreter does not listen to arbitrary channel messages for translation.', ShieldCheck],
   ['Explicit conversation turns', 'Only content sent through the opt-in conversation workflow reaches the translation provider.', MessageSquareText],
   ['Private results', 'Translation, explanation, review and document workflows return private results where specified by the source design.', LockKeyhole],

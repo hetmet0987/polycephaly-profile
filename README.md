@@ -62,3 +62,8 @@ See [`docs/DEPLOY_VERCEL.md`](docs/DEPLOY_VERCEL.md).
 ## v2.2.1
 - Fixed APRIS pipeline tuple typing so Lucide icon components are strongly typed as `LucideIcon`.
 - This resolves the Vercel TypeScript build failure at `app/projects/apris/page.tsx` line 143.
+
+
+## v2.2.2 Build hardening
+- Added explicit `LucideIcon` tuple typing to all icon-backed project data arrays so Vercel TypeScript checking does not infer icon components as React keys/nodes.
+- Replaced CSS flex alignment `start/end` values with `flex-start/flex-end` to remove the Autoprefixer mixed-support warning.

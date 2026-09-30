@@ -6,8 +6,9 @@ import {
   ArrowLeft, ArrowRight, Bot, CalendarClock, CheckCircle2, FileText, Globe2,
   Newspaper, Radio, Rss, ShieldAlert, Sparkles, Timer, Users, Workflow,
 } from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
 
-const topLevel = [
+const topLevel: Array<[string, string, LucideIcon]> = [
   ['/herald', 'Publishing Desk with the largest subcommand surface.', Newspaper],
   ['/newsroom', 'Private newsroom desk for drafts, review and next actions.', FileText],
   ['/crisis', 'Crisis press operations: start, update, resolve and status.', ShieldAlert],
@@ -51,7 +52,7 @@ const intensity = [
   ['01', 'Routine'], ['02', 'Notable'], ['03', 'Major'], ['04', 'Breaking'], ['05', 'Historic'],
 ]
 
-const boundaries = [
+const boundaries: Array<[string, string, LucideIcon]> = [
   ['AI can draft', 'Assistive editorial generation remains private until a human chooses what to publish.', Bot],
   ['AI cannot publish', 'The source explicitly keeps editorial AI from automatic publication authority.', ShieldAlert],
   ['Official ≠ journalism', 'HER- communications and PT journalism remain distinct publication records.', FileText],

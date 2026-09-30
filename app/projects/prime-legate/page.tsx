@@ -22,6 +22,7 @@ import {
   Target,
   Waypoints,
 } from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
 
 const stages = [
   ['STAGE 01', 'Sovereign Relationship Graph', 'Deterministic relationship graph from Embassy, Treaty, Timeline and relationship-age evidence.'],
@@ -54,7 +55,7 @@ const controls = [
   ['/crisis', 'Crisis & de-escalation protocol.'],
 ]
 
-const missionViews = [
+const missionViews: Array<[string, string, LucideIcon]> = [
   ['Overview', 'Objective, owner, type, progress, linked records and update count.', Target],
   ['Plan', 'Milestones and completion progress without raw action strings.', Waypoints],
   ['Evidence', 'Current Treaty, Negotiation, Crisis, Joint Event and Diplomatic Case context.', FileText],
